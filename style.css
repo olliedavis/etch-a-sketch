@@ -6,7 +6,6 @@ table{
 
 .cell{
     border: 1px solid black;
-    height: 15px;
 }
 
 .cell:hover{

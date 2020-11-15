@@ -1,12 +1,10 @@
-let cellCount = 5;
-
-let cell = document.getElementsByClassName("cell");
+let cellCount = 23;
 
 //autoGrid - Creates the Rows and Columns
 function autoGrid() {
   rowMaker();
   cellMaker();
-  squareMaker()
+  colorMaker();
  }
 
 //Runs the above functions on page load
@@ -24,5 +22,19 @@ function cellMaker() {
     $(".row").append("<td class='cell'></td>")
   }
 };
+
+//listening - 
+function colorMaker(){
+  let cell = document.getElementsByClassName("cell");
+  for (let i = 0; i < cell.length; i++){
+    cell[i].addEventListener('mouseover', getColor);
+  }
+  function getColor(event) {
+    let selectedCell = event.target;
+    return selectedCell.style.backgroundColor = "black"
+}
+}
+
+
 
 
