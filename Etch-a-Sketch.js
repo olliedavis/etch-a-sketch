@@ -1,4 +1,4 @@
-let cellCount = 6;
+let cellCount = 5;
 
 let cell = document.getElementsByClassName("cell");
 
@@ -25,9 +25,4 @@ function cellMaker() {
   }
 };
 
-//squareMaker - Keeps the grid as a square by dividing the width of the of the cable by the requested cell count. 
-function squareMaker () {
-  let cellSize = ((`500 / ${cellCount}`) + "px");
-  document.getElementsByClassName("cell").style.width = cellSize;
-  document.getElementsByClassName("cell").style.height = cellSize;
-}
+
