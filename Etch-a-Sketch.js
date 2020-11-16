@@ -1,7 +1,8 @@
 let cellCount = prompt("Please enter a number. This will be squared so don't go mad :o");
+
 function cellPrompt() {
   if(isNaN(cellCount)){
-    cellPrompt();
+    cellCount = prompt("Please enter a number. This will be squared so don't go mad :o");
   } else {
     return cellCount;
 }}
@@ -42,6 +43,9 @@ function colorMaker(){
 }
 }
 
-
+document.getElementById("reset").addEventListener("click", resetButton);
+function resetButton (){
+  location.reload();
+}
 
 
