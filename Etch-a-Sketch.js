@@ -1,7 +1,14 @@
-let cellCount = 23;
+let cellCount = prompt("Please enter a number. This will be squared so don't go mad :o");
+function cellPrompt() {
+  if(isNaN(cellCount)){
+    cellPrompt();
+  } else {
+    return cellCount;
+}}
 
 //autoGrid - Creates the Rows and Columns
 function autoGrid() {
+  cellPrompt();
   rowMaker();
   cellMaker();
   colorMaker();
